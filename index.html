@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIG-GAME</title>
+    <link rel="shortcut icon" href="./dice6.png">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="body">
+        <div class="main">
+            <div class="player_1 active" id="player_1">
+                <div class="player_name" id="player_1">Player 1 <div id="red1"></div></div>
+                <div class="player_point" id="player_1_point">0</div>
+                <div class="current" id="current_1">
+                    <div class="current_point_name">Current</div>
+                    <div class="current_point" id="current_point_1">0</div>
+                </div>
+                <div id="score1">0</div>
+            </div>
+            <div class="player_2" id="player_2">
+                <div class="player_name" id="player_2">Player 2 <div id="red2"></div></div>
+                <div class="player_point" id="player_2_point">0</div>
+                <div class="current" id="current_2">
+                    <div class="current_point_name">Current</div>
+                    <div class="current_point" id="current_point_2">0</div>
+                </div>
+                <div id="score2">0</div>
+            </div>
+            <div class="options">
+                <div class="new_game menu" id="new">New Game</div>
+                <div class="dice menu" >
+                    <img id="dice" src="./dice4.png" alt="">
+                </div>
+                <div class="roll_dice menu" id="rollDice">Roll Dice</div>
+                <div class="hold menu" id="hold">Hold</div>
+            </div>
+        </div>
+        <div id="winner">
+            <div id="winner_content">
+                <div id="content">PLAYER 1 WON </div>
+                <button id="okay">Okay</button>
+            </div>
+        </div>
+        <div class="rules">
+            <div class="rule_header">Rule!!!</div>
+            <div class="instruction">
+                Players take turns to roll a single dice as many times as they wish, adding all roll results to a running total, but losing their gained score for the turn if they roll a 1.
+                <br> First player to get to 100 wins the game. <br>
+                Built by <a href="https://github.com/toseth97" target="_blank" style="color:rgb(64, 36, 130)"> Lawal Tobiloba</a>
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
